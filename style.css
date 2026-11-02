@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+#noctali{
+    background-color: #3f3131;
+    border-radius: 20px;
+    border: 10px solid rgb(128, 114, 127);
+    margin:auto;
+    margin-top: 50px;
+    padding: 25px 25px 60px 25px;
+    position: relative;
+}
+#mewtwo{
+    background-color: #98136e;
+    border-radius: 20px;
+    border: 10px solid rgb(198, 8, 160); 
+    margin:auto;   
+    margin-top: 50px;
+    padding: 25px 25px 60px 25px;
+    position: relative;
+}
+#lucario{
+    background-color: #9e4e0d;
+    border-radius: 20px;
+    border: 10px solid rgb(230, 134, 9);
+    margin:auto;
+    margin-top: 50px;
+    padding: 25px 25px 60px 25px;
+    position: relative;
+}
+nav{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+
+
+nav > div{
+    transform: perspective(800px) rotateY(0deg) translateY(0) scale(1);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+nav > div:hover{
+    transform: perspective(800px) rotateY(-20deg) translateY(-10px) scale(1.05);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+nav > div:nth-child(even):hover{
+    transform: perspective(800px) rotateY(20deg) translateY(-10px) scale(1.05);
+}
+p{
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0 0 20px 20px;
+    border: 5px rgba(255, 255, 255, 0.3) solid;
+}
+h1{
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px 20px 0 0;
+    border: 5px rgba(255, 255, 255, 0.3) solid;
+}
+    .types{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.types span{
+    color: white;
+    font-weight: bold;
+    padding: 4px 15px;
+    margin: 0 5px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.combat{
+    background-color: #c22e28;
+}
+.acier{
+    background-color: #b7b7ce;
+}
+.psy{
+    background-color: #f95587;
+}
+.tenebres{
+    background-color: #705746;
+}
